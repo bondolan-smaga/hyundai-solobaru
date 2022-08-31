@@ -1,22 +1,20 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "antd";
+import { MainFooter, MainNavbar } from "../index"
 
 const { Header, Content, Footer } = Layout;
 
 export default function MainLayout({ children, meta, ...props }) {
-  const { title } = meta || {};
-
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-        <meta name="title" content={title} />
-      </Helmet>
-      <Header></Header>
-      <Content>
+      <Header style={{padding : '0px 15px 0px 15px'}}>
+        <MainNavbar />
+      </Header>
+      <Content style={{padding : '0px 15px 0px 15px'}}>
         {children}
       </Content>
-      <Footer></Footer>
+      <Footer style={{padding : '0px 15px 0px 15px'}}>
+        <MainFooter />
+      </Footer>
     </Layout>
   );
 }

@@ -1,0 +1,43 @@
+.logo {
+  text-align: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width:320px) {
+  .logo {
+    text-align: center;
+    align-items: center;
+    transform: translateX(20px);
+  }
+
+  .mainlogo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .navbar-menu {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: aquamarine;
+    border-radius: 15px;
+  }
+
+  .menubtn {
+    transform: translateX(225px);
+    width: 65px;
+    height: 25px;
+    background-color: rgba(74, 66, 124, 0.89);
+    color: rgba(255, 255, 255, 0.897);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+  }
+
+}
