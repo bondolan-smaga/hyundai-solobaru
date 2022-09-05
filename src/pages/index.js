@@ -1,7 +1,7 @@
 import HomePage from "./homepage";
-import CataloguePage from "./cataloguepage";
+import PriceListPage from "./pricelistpage";
 
 export {
   HomePage,
-  CataloguePage
+  PriceListPage
 }
