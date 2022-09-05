@@ -1,0 +1,59 @@
+.logo {
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  height: 30px;
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(123, 134, 228);
+  // float: right;
+}
+
+
+@media only screen and (max-width:320px) {
+  .logo {
+    text-align: center;
+    align-items: center;
+  }
+
+  .mainlogo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .navbar-menu {
+    overflow: hidden;
+    height: 30px;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(123, 134, 228);
+  } 
+  
+  .menubtn {
+    width: 65px;
+    height: 25px;
+    background-color: rgba(74, 66, 124, 0.89);
+    color: rgba(255, 255, 255, 0.897);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    float: right;
+  }
+
+}
+
+@media only screen and (min-width:1440px) {
+  .mainlogo{
+    width: 400px;
+    height: 75px;
+  }
+}
