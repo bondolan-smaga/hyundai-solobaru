@@ -1,6 +1,6 @@
+import "./App.scss";
 import { Routes, Route} from "react-router-dom"
 import { HomePage, PriceListPage,ModelPage } from "./pages"
-
 
 function App() {
   return (
