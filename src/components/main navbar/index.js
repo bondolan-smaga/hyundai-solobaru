@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Row, Col, Button, Dropdown, Menu, Typography, Image, Card } from 'antd'
+import { Row, Col, Button, Dropdown, Menu, Typography, Image} from 'antd'
 import "./index.scss"
 
 const { Title } = Typography
@@ -14,9 +14,10 @@ const menuProps = [
   },
   {
     text: 'MODEL',
-    link: '/'
+    link: '/model'
   }
 ]
+
 
 const menuDrop = (
   <Menu
@@ -51,7 +52,7 @@ const menuDrop = (
         key: '3',
         label: (
           <Title level={5}>
-            <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
+            <Link to="/model" style={{ color: 'white', textDecoration: 'none' }}>
               MODEL
             </Link>
           </Title>
@@ -60,67 +61,8 @@ const menuDrop = (
     ]}
   />
 )
-const dropItems = [
-  {
-    name: 'STARGAZER',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'IONIQ 5',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'HYUNDAI CRETA',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'KONA ELECTRIC',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'IONIQ',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'PALISADE',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'STARIA',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  },
-  {
-    name: 'SANTA FE',
-    image: 'https://hyundai-official.com/wp-content/uploads/2022/07/IMG_20220715_180157-120x90.jpg'
-  }
-]
 
 export default function MainNavbar() {
-  // const modelDrop = (
-  //   <Row>
-  //     <Col span={24} style={{ display: 'flex', flexWrap: 'wrap' }}>
-  //       {
-  //         dropItems.map((dropItem) => {
-  //           const { name, image } = dropItem
-  //           return (
-  //             <Col span={8}>
-  //               <Card title={name} bordered={false}
-  //                 cover={
-  //                   <Image
-  //                     src={image}
-  //                     alt=''
-  //                     preview={false}
-  //                   />
-  //                 }
-  //               >
-  //               </Card>
-  //             </Col>
-  //           )
-  //         })
-  //       }
-  //     </Col>
-  //   </Row>
-  // )
 
   return (
     <Row style={{
@@ -145,7 +87,7 @@ export default function MainNavbar() {
           </Col>
         </Row>
         <Row className="navbar-menu" justify="center" align="right">
-          <Col span={24} className="main-menu" style={{ display: 'flex', marginLeft: '40px' }}>
+          <Col span={24} className="main-menu" style={{ display: 'flex' }}>
             {
               menuProps.map((menuProp) => {
                 const { text, link } = menuProp
@@ -156,7 +98,7 @@ export default function MainNavbar() {
                     lg={{ span: 6 }}
                     xl={{ span: 6 }}
                     className="menu-item">
-                    <Link to={link}>
+                    <Link to={link} style={{ textDecoration: 'none', listStyle: 'none', color: 'black' }}>
                       {text}
                     </Link>
                   </Col>
