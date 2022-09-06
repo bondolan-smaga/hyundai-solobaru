@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Row, Col, Button, Dropdown, Menu, Typography, Image} from 'antd'
+import { Row, Col, Button, Dropdown, Menu, Typography, Image } from 'antd'
 import "./index.scss"
 
 const { Title } = Typography
@@ -22,10 +22,10 @@ const menuProps = [
 const menuDrop = (
   <Menu
     style={{
-      overflow: 'auto',
+      overflow: 'hidden',
       listStyle: 'none',
       listStyleType: 'none',
-      top: '80px'
+      backgroundColor: '#003082'
     }}
     items={[
       {
@@ -68,53 +68,55 @@ export default function MainNavbar() {
     <Row style={{
       background: '#BFBAAF'
     }}>
-      <Col>
+      <Col span={24}>
         <Row>
           <Col xs={{ span: 24 }} span={24} className="logo">
             <Image className="mainlogo"
               preview={false}
               src="https://hyundai-official.com/wp-content/uploads/2022/01/logohyundai.png"
               alt="not found"
+              sizes="default"
             />
           </Col>
-          <Col className="address" span={24} >
-            <Row>
-              Hyundai-Solo Baru
-            </Row>
-            <Row>
-              Jalan Ir. Soekarno, Grogol, Sukoharjo, Jawa Tengah
-            </Row>
-          </Col>
-        </Row>
-        <Row className="navbar-menu" justify="center" align="right">
-          <Col span={24} className="main-menu" style={{ display: 'flex' }}>
-            {
-              menuProps.map((menuProp) => {
-                const { text, link } = menuProp
-                return (
-                  <Col
-                    style={{ overflow: 'auto', listStyle: 'none', textDecoration: 'none', fontWeight: '700', color: 'white', listStyleType: 'none' }}
-                    md={{ span: 8 }}
-                    lg={{ span: 6 }}
-                    xl={{ span: 6 }}
-                    className="menu-item">
-                    <Link to={link} style={{ textDecoration: 'none', listStyle: 'none', color: 'black' }}>
-                      {text}
-                    </Link>
-                  </Col>
-                )
-              })
-            }
-          </Col>
-          <Col xs={{ span: 8 }} className="xs-menu">
-            <Dropdown overlay={menuDrop} overlayStyle={{ height: 'fit-content', width: '100%', backgroundColor: 'rgba(74, 90, 124, 0.89)', fontFamily: 'inherit', borderRadius: '10px', color: 'white', lineHeight: '10px', top: '110px' }} placement={"bottom"}>
-              <Button className="menubtn" onClick={(e) => {
-                e.preventDefault()
-              }}>MENU</Button>
-            </Dropdown>
-          </Col>
+          <Row>
+            <Col span={24} className="address">
+              <Row style={{ textAlign: 'right' }}>
+                Hyundai-Solo Baru
+              </Row>
+              <Row style={{ textAlign: 'right' }}>
+                Jalan Ir. Soekarno, Grogol, Sukoharjo, Jawa Tengah
+              </Row>
+            </Col>
+          </Row>
         </Row>
       </Col >
+      <Row className="navbar-menu">
+        <Col span={24} className="main-menu" style={{ display: 'flex' }}>
+          {
+            menuProps.map((menuProp) => {
+              const { text, link } = menuProp
+              return (
+                <Col
+                  style={{ overflow: 'hidden', listStyle: 'none', textDecoration: 'none', fontWeight: '700', color: 'white', listStyleType: 'none' }}
+                  md={{ span: 3 }}
+                  lg={{ span: 3 }}
+                  xl={{ span: 2 }}
+                  xxl={{ span: 3 }}
+                  className="menu-item">
+                  <Link to={link} style={{ textDecoration: 'none', listStyle: 'none', color: 'black' }}>
+                    {text}
+                  </Link>
+                </Col>
+              )
+            })
+          }
+        </Col>
+        <Dropdown overlay={menuDrop} overlayStyle={{ width: '100%', backgroundColor: 'rgb(123, 134, 228)', fontFamily: 'inherit', borderRadius: '10px', color: 'white' }} placement={"bottom"}>
+          <Button className="menubtn" onClick={(e) => {
+            e.preventDefault()
+          }}>MENU</Button>
+        </Dropdown>
+      </Row>
     </Row >
   )
 };
