@@ -3,5 +3,5 @@ import CataloguePage from "./cataloguepage";
 
 export {
   HomePage,
-  CataloguePage
+  CataloguePage,
 }
