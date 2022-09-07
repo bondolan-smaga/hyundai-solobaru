@@ -4,13 +4,13 @@ export default function MainFooter() {
   return (
     <Row>
       <Col span={24} style={{
-        background: "rgba(0,0,0,0.3)",
+        background: "#BFBAAF",
         textAlign: "center",
         padding: "2.5em",
         color: "#FCFCFC"
       }}>
         Hyundai Andalan - Dealer Resmi Hyundai
-        </Col>
+      </Col>
     </Row>
   );
 }
