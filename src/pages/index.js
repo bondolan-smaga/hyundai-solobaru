@@ -1,7 +1,9 @@
 import HomePage from "./homepage";
-import CataloguePage from "./cataloguepage";
+import PriceListPage from "./pricelistpage";
+import ModelPage from "./modelpage";
 
 export {
   HomePage,
-  CataloguePage,
+  PriceListPage,
+  ModelPage
 }

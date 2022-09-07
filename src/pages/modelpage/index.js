@@ -1,9 +1,8 @@
 import MainLayout from '../../components/main-layout';
 
-export default function CataloguePage() {
+export default function ModelPage() {
   return (
     <MainLayout>
-      
     </MainLayout>
   );
 }
