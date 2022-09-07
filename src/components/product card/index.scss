@@ -93,3 +93,35 @@
   }
 
 }
+
+@media only scrren and (min-with:992px) {
+  .card{
+    height: 240px;
+  }  
+  .ttl-cov-card{
+    height: 15px;
+    border-radius: 0 5% 5% 0;
+    width: 40% !important;
+    font-size: 0.7rem !important;
+  }
+
+  .desc-ttl-card{
+    font-size: 0.7rem !important;
+  }
+}
+
+@media only scrren and (min-with:1440px) {
+  .card{
+    height: 240px;
+  }  
+  .ttl-cov-card{
+    height: 30px;
+    border-radius: 0 5% 5% 0;
+    width: 40% !important;
+    font-size: 1rem !important;
+  }
+
+  .desc-ttl-card{
+    font-size: 0.7rem !important;
+  }
+}

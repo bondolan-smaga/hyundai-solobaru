@@ -1,4 +1,4 @@
-import { Button, Card, Row, Typography, Col } from "antd";
+import { Card, Row, Typography} from "antd";
 import "./index.scss"
 const { Title } = Typography
 
