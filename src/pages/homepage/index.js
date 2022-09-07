@@ -1,4 +1,4 @@
-import { MainLayout, CarouselBanner } from "../../components";
+import { MainLayout, CarouselBanner} from "../../components";
 
 
 export default function HomePage() {

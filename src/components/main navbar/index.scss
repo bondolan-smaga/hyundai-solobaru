@@ -122,6 +122,7 @@
 
 
   .navbar-menu {
+    width: 100% ;
     line-height: 40px;
     height: 45px;
     display: flex;
@@ -129,6 +130,10 @@
   }
 
   .xs-menu {
+    display: none !important;
+  }
+
+  .menubtn{
     display: none !important;
   }
 
