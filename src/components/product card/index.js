@@ -1,4 +1,4 @@
-import { Card, Row, Typography} from "antd";
+import { Card, Row, Typography, Col } from "antd";
 import "./index.scss"
 const { Title } = Typography
 
@@ -8,7 +8,10 @@ export default function ProductCard() {
     <Row>
       <Card
         className="card"
-        style={{ borderRadius: '5%', backgroundColor: '#BFBAAF' }}
+        style={{
+          borderRadius: '5%',
+          backgroundColor: '#BFBAAF'
+        }}
         hoverable
         cover={
           <Row>
@@ -23,8 +26,18 @@ export default function ProductCard() {
               }}
             />
             <Row className="ttl-cov-card"
-              style={{ backgroundColor: '#003082', width: 'fit-content', height: '20px', textAlign: 'center', position: 'absolute', top: 'calc(2%)', borderRadius: '7px 15px 15px 0' }}>
-              <Title level={5} style={{ color: 'whitesmoke',fontSize:'0.7rem'}}>
+              style={{
+                backgroundColor: '#003082',
+                width: 'fit-content',
+                height: '20px',
+                textAlign: 'center',
+                top: 'calc(2%)',
+                borderRadius: '7px 15px 15px 0'
+              }}>
+              <Title level={5} style={{
+                color: 'whitesmoke',
+                fontSize: '0.7rem'
+              }}>
                 STARGAZER
               </Title>
             </Row>
