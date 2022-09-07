@@ -1,4 +1,4 @@
-import { Card, Row, Typography, Col } from "antd";
+import { Card, Row, Typography} from "antd";
 import "./index.scss"
 const { Title } = Typography
 
@@ -7,7 +7,7 @@ export default function ProductCard() {
   return (
     <Row>
       <Card
-        className="card"
+        className="card-model"
         style={{
           borderRadius: '5%',
           backgroundColor: '#BFBAAF'
