@@ -1,4 +1,4 @@
-.card {
+.card-model{
   border-radius: 5%;
   background-color: #BFBAAF;
 }
@@ -27,9 +27,26 @@
 
 
 @media only screen and (max-width:375px) {
-  // .card {
-  //   height: 120px;
-  // }
+  .card-model {
+    height: 110px;
+  }
+
+  .ttl-cov-card {
+    height: 15px;
+    border-radius: 0 5% 5% 0;
+    width: 40% !important;
+    font-size: 0.1rem !important;
+  }
+
+  .desc-ttl-card {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media only screen and (min-width:375px) {
+  .card-model {
+    height: 120px;
+  }
 
   .ttl-cov-card {
     height: 15px;
@@ -44,9 +61,9 @@
 }
 
 @media only screen and (min-width:425px) {
-  // .card {
-  //   height: 125px;
-  // }
+  .card-model {
+    height: 130px;
+  }
 
   .ttl-cov-card {
     height: 15px;
@@ -61,9 +78,9 @@
 }
 
 @media only screen and (min-width:576px) {
-  // .card {
-  //   height: 120px;
-  // }
+  .card-model {
+    height: 120px;
+  }
 
   .ttl-cov-card {
     height: 15px;
@@ -78,9 +95,9 @@
 }
 
 @media only screen and (min-width:768px) {
-  // .card {
-  //   height: 140px;
-  // }
+  .card-model {
+    height: 150px;
+  }
 
   .ttl-cov-card {
     height: 15px;
@@ -90,20 +107,20 @@
   }
 
   .desc-ttl-card {
-    font-size: 0.7rem !important;
+    font-size: 1 rem !important;
   }
 }
 
 @media only scrren and (min-with:992px) {
-  // .card {
-  //   height: 240px;
-  // }
+  .card-model {
+    height: 200px;
+  }
 
   .ttl-cov-card {
     height: 15px;
     border-radius: 0 5% 5% 0;
     width: 40% !important;
-    font-size: 0.7rem !important;
+    font-size: 1rem !important;
   }
 
   .desc-ttl-card {
@@ -112,9 +129,9 @@
 }
 
 @media only scrren and (min-with:1440px) {
-  // .card {
-  //   height: 240px;
-  // }
+  .card-model {
+    height: 200px;
+  }
 
   .ttl-cov-card {
     height: 30px;
