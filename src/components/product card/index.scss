@@ -28,6 +28,23 @@
 
 @media only screen and (max-width:375px) {
   .card-model {
+    height: 110px;
+  }
+
+  .ttl-cov-card {
+    height: 15px;
+    border-radius: 0 5% 5% 0;
+    width: 40% !important;
+    font-size: 0.1rem !important;
+  }
+
+  .desc-ttl-card {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media only screen and (min-width:375px) {
+  .card-model {
     height: 120px;
   }
 
@@ -45,7 +62,7 @@
 
 @media only screen and (min-width:425px) {
   .card-model {
-    height: 125px;
+    height: 130px;
   }
 
   .ttl-cov-card {
@@ -79,7 +96,7 @@
 
 @media only screen and (min-width:768px) {
   .card-model {
-    height: 200px;
+    height: 150px;
   }
 
   .ttl-cov-card {
